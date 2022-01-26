@@ -1,0 +1,20 @@
+<h3>Quadro com moldura</h3>
+<canvas width="600" height="400"></canvas>
+<script>
+  function desenhaQuadradoVerde() {
+    var tela = document.querySelector("canvas");
+    var pincel = tela.getContext("2d");
+
+    pincel.fillStyle = "green"; //a cor da tinta
+    pincel.fillRect(0, 0, 50, 50); //o quadro
+    pincel.strokeStyle = "black"; //cor da moldura
+    pincel.strokeRect(0, 0, 50, 50); //moldura
+
+    pincel.fillRect(50, 0, 50, 50);
+    pincel.strokeRect(50, 0, 50, 50);
+
+    pincel.fillRect(100, 0, 50, 50);
+    pincel.strokeRect(100, 0, 50, 50);
+  }
+  desenhaQuadradoVerde();
+</script>

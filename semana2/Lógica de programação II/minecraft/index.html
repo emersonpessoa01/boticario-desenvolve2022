@@ -1,0 +1,41 @@
+<meta charset="UTF-8" />
+<title>Creeper</title>
+<h1 style="margin-left: 310px">Creeper</h1>
+<canvas width="600" height="400"></canvas>
+<script>
+  var tela = document.querySelector("canvas");
+  var pincel = tela.getContext("2d");
+  //cabeça
+  pincel.fillStyle = "darkgreen";
+  pincel.fillRect(200, 50, 350, 300);
+
+  //olhos(olho1 = x:200+50=250;y:50+60=110;
+  //olho2 = x:50+60=110;y:50+60=110)
+  pincel.fillStyle = "black";
+  pincel.fillRect(250, 110, 90, 90);
+  pincel.fillRect(410, 110, 90, 90);
+  //nariz(x:250+90=340;y:110+90=200)
+  pincel.fillRect(340, 200, 70, 100);
+
+  //barba(x:340-40=300;y:200+40)
+  pincel.fillRect(300, 240, 40, 110);
+  pincel.fillRect(410, 240, 40, 110);
+
+  //dente
+  pincel.fillStyle = "#fff";
+  pincel.fillRect(331, 260, 90, 40);
+
+  //separação dos dentes
+  pincel.fillStyle = "#000";
+  pincel.fillRect(375, 240, 5, 60);
+
+  //risco dos olhos
+  pincel.fillStyle = "#fff";
+  // pincel.fillRect(275, 150, 40, 10);
+  // pincel.fillRect(440, 150, 40, 10);
+  pincel.beginPath();
+  // pincel.moveTo(300,200)//forma triangulo
+  pincel.arc(295,155,25,0,1*3.14)      
+  pincel.arc(455,155,25,0,1*3.14)      
+  pincel.fill()
+</script>
