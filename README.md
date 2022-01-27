@@ -1,6 +1,8 @@
+<img src="./img/wizard_1.gif" width="120" alt="wizard-boticário_1"/>
 <h4 align="center">
      <b>Boticário - Desenvolve2022 </b><sup>:copyright:</sup>
 </h4>
+<p p align="right"><img src="./img/wizard_2.gif" width="120" alt="wizard-boticário_2"/></p>
 
 <hr> 
      <p align="center">
