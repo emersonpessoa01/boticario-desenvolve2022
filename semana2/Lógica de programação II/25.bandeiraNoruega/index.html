@@ -1,0 +1,50 @@
+<canvas
+  style="
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px #a02f2f, -2px -2px 10px #ffff;
+  "
+  width="600"
+  height="400"
+></canvas>
+
+<script>
+  let tela = document.querySelector("canvas");
+  let pincel = tela.getContext("2d");
+
+  pincel.fillStyle = "darkblue";
+  pincel.fillRect(0, 0, 600, 400);
+
+  //cor branca superior à esquerda
+  pincel.fillStyle = "#fff";
+  pincel.fillRect(0, 0, 200, 180);
+
+  //cor branca superior à direita
+  pincel.fillStyle = "#fff";
+  pincel.fillRect(250, 0, 600, 180);
+
+  //cor branca inferior à esquerda
+  pincel.fillStyle = "#fff";
+  pincel.fillRect(0, 230, 200, 200);
+
+  //cor branca inferior à direita
+  pincel.fillStyle = "#fff";
+  pincel.fillRect(250, 230, 600, 180);
+
+  //cor vermelho superior à esquerda
+  pincel.fillStyle = "red";
+  pincel.fillRect(0, 0, 180, 160);
+
+  //cor vermelho superior à direita
+  pincel.fillStyle = "red";
+  pincel.fillRect(270, 0, 600, 160);
+
+  //cor vermelho inferior à esquerda
+  pincel.fillStyle = "red";
+  pincel.fillRect(0, 250, 180, 200);
+
+  //cor vermelho inferior à direita
+  pincel.fillStyle = "red";
+  pincel.fillRect(270, 250, 600, 180);
+
+  pincel.fill();
+</script>
