@@ -26,7 +26,7 @@
 
 <hr>
 
-<h2 style="align=center; border= 1px solid #d9d9d9">
+<h2 align="center">
      Aulas ministradas pela plataforma: <a href="https://www.alura.com.br/"><img src="./img/alura_1.jpg" width="60"/></a>
      </h2> 
 <h3 align="center">Trilha de formação: Full Stack</h3>
