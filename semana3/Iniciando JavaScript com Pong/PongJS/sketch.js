@@ -121,7 +121,8 @@ function movimentaMinhaRaquete() {
 //      raquetada.play();
 //   }
 // }
-//tem a mesma função do verificaColisaoRaquete()
+
+//tem a mesma função acima comentada
 function verificaColisaoRaquete(x, y) {
   colidiu = collideRectCircle(
     x,
@@ -138,6 +139,7 @@ function verificaColisaoRaquete(x, y) {
     raquetada.play();
   }
 }
+
 // function colisaoRaqueteOponenteBiblioteca() {
 //   colidiu = collideRectCircle(
 //     xRaqueteOponente,
@@ -161,6 +163,7 @@ function verificaColisaoRaquete(x, y) {
 //   yRaqueteOponente += velocidadeYOponente;
 // }
 
+//permite o movimento da raquete a direita com as teclas "s" e "w"
 function movimentaRaqueteOponente() {
   if (keyIsDown(87)) {
     yRaqueteOponente -= 10;
