@@ -25,7 +25,11 @@ nav a {
   font-size: 22px;
   text-decoration: none;
 }
-
+nav a:hover {
+  color: #c78c19;
+  text-decoration: underline;
+  transition: all 0.5s;
+}
 /*MAIN */
 .produto {
   width: 940px;
@@ -38,10 +42,32 @@ nav a {
   text-align: center;
   width: 30%;
   vertical-align: top;
-  background: #ccc;
+  /* background: #ccc; */
   margin: 0 1.5%;
   padding: 30px 20px;
   box-sizing: border-box;
+  /*border-width: 2px; /*tamanho*/
+  /*border-style: solid ;/*tipo*/
+  /*border-color:#000; /*cor*/
+  /*border: dashed*/
+  /*border: dotted*/
+
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+}
+
+.produto li:hover {
+  /* border-color: #c78c19; */
+  box-shadow: 2px 2px 5px #c78c19, -2px -2px 5px #fff;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.produto li:active {
+    /* border-color: #3ea175; */
+    border: 1px solid #e43030;
+}
+.produto li:hover h2 {
+    font-size: 35px;
 }
 
 .produto h2 {
@@ -59,4 +85,34 @@ nav a {
   font-weight: bold;
   font-size: 22px;
   margin: 10px 0 0; /*mesmo que margin-top: 10px */
+}
+
+@media (max-width: 947px) {
+  main .produto li {
+    /*width: calc(50% - 10px); 50% coloca dois em uma linha*/
+    width: calc(33% - 10px); /* 33% coloca o terceiro em outra linha */
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 640px) {
+  main .produto li {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    float:left;
+  }
+  
+}
+@media (max-width: 380px) {
+  main .produto li {
+    width: calc(33% - 10px);
+    margin-bottom: 20px;
+    float:left;
+  }
+@media (max-width: 270px) {
+  main .produto li {
+    width: calc(33% - 10px);
+    margin-bottom: 20px;
+    margin-right: 20px;
+    float:left;
+  }
 }
