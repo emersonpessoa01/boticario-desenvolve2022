@@ -1,0 +1,17 @@
+
+
+header {
+  background: #e4eaee;
+}
+nav li {
+  display: inline; /*colocar lado a lado*/
+  margin: 0 0 0 15px;
+
+}
+nav a {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    font: size 22px;
+    text-decoration: none;
+}
