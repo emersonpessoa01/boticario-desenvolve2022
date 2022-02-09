@@ -1,17 +1,62 @@
-
-
+/*HEADER*/
 header {
   background: #e4eaee;
+  padding: 20px 0;
+}
+.caixa {
+  width: 940px;
+  position: relative;
+  margin: 0 auto;
+}
+nav {
+  position: absolute;
+  top: 110px;
+  right: 0;
+  bottom: 20px;
 }
 nav li {
   display: inline; /*colocar lado a lado*/
   margin: 0 0 0 15px;
-
 }
 nav a {
-    text-transform: uppercase;
-    color: #000;
-    font-weight: bold;
-    font: size 22px;
-    text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+/*MAIN */
+.produto {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.produto li {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  background: #ccc;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
+.produto h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/*primeiro parágrafo*/
+.produto-descricao {
+  font-size: 18px;
+}
+
+/*segundo parágrafo*/
+.produto-preco {
+  font-weight: bold;
+  font-size: 22px;
+  margin: 10px 0 0; /*mesmo que margin-top: 10px */
 }
