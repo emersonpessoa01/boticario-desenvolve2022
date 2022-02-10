@@ -1,6 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  border: none;
+  outline: none;
+  font-weight: 300;
+  box-sizing: border-box;
+  font-family: "Lexend", "Lato", sans-serif;
+}
+
 /*HEADER*/
 header {
-  background: #e4eaee;
+  background: linear-gradient(to right, #6610f2 10%,#3F2D59 30%,#6610f2 50%,#3F2D59 100%);
   padding: 20px 0;
 }
 .caixa {
@@ -8,9 +20,12 @@ header {
   position: relative;
   margin: 0 auto;
 }
+.caixa img{
+  width: 10%;
+}
 nav {
   position: absolute;
-  top: 110px;
+  top: 50px;
   right: 0;
   bottom: 20px;
 }
@@ -20,7 +35,7 @@ nav li {
 }
 nav a {
   text-transform: uppercase;
-  color: #000;
+  color: #fff;
   font-weight: bold;
   font-size: 22px;
   text-decoration: none;
@@ -31,10 +46,12 @@ nav a:hover {
   transition: all 0.5s;
 }
 /*MAIN */
+
 .produto {
   width: 940px;
   margin: 0 auto;
   padding: 50px 0;
+  
 }
 
 .produto li {
@@ -55,24 +72,32 @@ nav a:hover {
   border: 1px solid #d9d9d9;
   border-radius: 6px;
 }
+.produto li img{
+  border-radius: 6px;
+  margin: 0 0 10px;
+}
 
 .produto li:hover {
   /* border-color: #c78c19; */
+  background: linear-gradient(to right, #3F2D59,#6610f2, #3F2D59);
   box-shadow: 2px 2px 5px #c78c19, -2px -2px 5px #fff;
-  transform: scale(1.02);
+  /* transform: scale(1.02); */
   cursor: pointer;
+  transition: all 0.5s ease;
+  color: #fff;
 }
 .produto li:active {
     /* border-color: #3ea175; */
     border: 1px solid #e43030;
 }
 .produto li:hover h2 {
-    font-size: 35px;
+    /* font-size: 35px; */
 }
 
 .produto h2 {
   font-size: 30px;
   font-weight: bold;
+  margin: 0 0 10px;
 }
 
 /*primeiro parágrafo*/
@@ -86,19 +111,38 @@ nav a:hover {
   font-size: 22px;
   margin: 10px 0 0; /*mesmo que margin-top: 10px */
 }
+footer{
+  text-align:center;
+  background: url("img/bg.jpg") no-repeat;
+  color: #fff;
+  padding: 40px 0;
+}
+footer img{
+  width: 15%;
+}
+
 
 @media (max-width: 947px) {
   main .produto li {
     /*width: calc(50% - 10px); 50% coloca dois em uma linha*/
     width: calc(33% - 10px); /* 33% coloca o terceiro em outra linha */
     margin-bottom: 20px;
+    display: inline-block;
+    align-items: center;
   }
 }
 @media (max-width: 640px) {
   main .produto li {
     width: calc(50% - 10px);
     margin-bottom: 20px;
-    float:left;
+    display: inline-block;
+    align-items: center;
+  }
+  .produto li img{
+    width: 40%;
+  }
+  footer p a{
+    width: 50%;
   }
   
 }
@@ -106,13 +150,12 @@ nav a:hover {
   main .produto li {
     width: calc(33% - 10px);
     margin-bottom: 20px;
-    float:left;
+    
   }
 @media (max-width: 270px) {
   main .produto li {
     width: calc(33% - 10px);
     margin-bottom: 20px;
     margin-right: 20px;
-    float:left;
   }
 }
