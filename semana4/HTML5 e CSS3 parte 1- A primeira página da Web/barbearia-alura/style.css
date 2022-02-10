@@ -1,19 +1,51 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  /* font-size: 100%; */
+  border: none;
+  outline: none;
+  font-weight: 300;
+  box-sizing: border-box;
+  font-family: "Lexend", "Lato", sans-serif;
+}
+header{
+  padding: 30px;
+  position: fixed;
+  width: 100%;
+  margin: 0 0 20px;
+  background: #002041;
+
+}
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+header a:hover{
+  color: #c78c19;
+}
+h1 {
+  text-align: center;
+  padding: 20px 0
 }
 #banner {
   width: 100%;
+  margin: 0 0 20px;
+  padding: 150px 0;
 }
 
 .principal {
   /* background: #f1ecec; */
   background: #eff3f6;
   padding: 30px;
+  color: #002041;
 }
-.titulo-principal{
+.titulo-principal {
   padding-left: 20px;
 }
 .titulo-centralizado {
   text-align: center;
+  padding: 0 0 20px;
 }
 p {
   text-align: center;
@@ -34,6 +66,7 @@ em strong {
 }
 .itens {
   font-style: italic;
+  list-style: none;
 }
 
 ul {
@@ -41,7 +74,26 @@ ul {
   vertical-align: top;
   width: 20%;
   margin-right: 15%;
+  margin: 0 auto;
 }
 .imagem-beneficios {
   width: 50%;
+  border-radius: 6px;
+  margin: 20 0 0;
+}
+
+@media (max-width: 640px){
+  .beneficios{
+    display: flex;
+    flex-direction: column;
+  }
+  beneficios ul .itens{
+    text-align: center;
+  }
+  .imagem-beneficios{
+  width: 75%;
+  margin:0 auto;
+  margin-top:20px;
+
+  }
 }
