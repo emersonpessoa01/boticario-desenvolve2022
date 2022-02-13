@@ -36,14 +36,12 @@ img {
   /* font-size: 24px; */
   text-transform: uppercase;
   letter-spacing: 4px;
-  
 }
-.logo > img{
-  border-radius:10px;
+.logo > img {
+  border-radius: 10px;
   width: 77%;
-
 }
-.logo > img:hover{
+.logo > img:hover {
   box-shadow: 3px 3px 8px #c78c19, -3px -3px 8px #fff;
 }
 header {
@@ -187,29 +185,50 @@ section {
   }
 }
 
-.top {
+/* TOP-IMAGE */
+.top-image {
   color: #c78c19;
-  display: flex;
-  background: url("img/beneficios.jpg") no-repeat center;
+  text-shadow: 0 1.5px #2b2929;
+  background: url("img/banner.jpg") no-repeat center;
   height: 80vh;
   background-attachment: fixed;
-  /* padding: 80px 0; */
+  background-size: cover;
+  padding: 80px 0;
 }
+
+.top-image .top-content .text-1 {
+  font-size: 23px;
+  margin-top: 100px;
+  text-align: center;
+}
+.top-image .top-content .text-2 {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* TOP-CONTENT */
 .top .max-width {
   width: 100%;
   display: flex;
 }
 .top .top-content .text-1 {
-  font-size: 18px;
-  margin-top: 100px;
+  color: #002041;
+  font-size: 23px;
+  text-align: center;
 }
 .top .top-content .text-2 {
+  color: #002041;
   font-size: 15px;
   font-weight: 400;
 }
 
 .top .top-content .text-3 {
-  font-size: 23px;
+  color: #002041;
+  font-size: 18px;
+}
+.top .top-content .text-4 {
+  color: #002041;
+  font-size: 15px;
 }
 
 .top .top-content a {
@@ -246,24 +265,40 @@ section {
   margin-bottom: 50px;
 }
 .flex > div {
-  flex: 1 1 200px;
+  flex: 1 1 350px;
   /* flex: 1 1 150px; */
   margin: 12px;
-  width: 200px;
+  width: 350px;
   height: 100%;
+  box-shadow: 3px 3px 8px #c78c19, -3px -3px 8px #fff;
+  border-radius:7px;
 }
 .flex > div:hover {
-  box-shadow: 3px 3px 8px #c78c19, -3px -3px 8px #fff;
   cursor: pointer;
-  transition: all 0.5s ease;
-  border-radius: 7px;
-  color: #fff;
+  opacity: 0.7;
+
 }
-.flex > div > img {
+.flex .flex-item .inner > ul {
+  padding-bottom: 78px;
+  /* border: 1px solid #6610f2; */
+  line-height: 23px;
+  border-radius: 0 0 7px 7px;
+}
+.inner > ul > li {
+  list-style: "🗸";
+  color: #002041;
+}
+.inner > ul > li:nth-child(1) {
+  font-weight: 700;
+}
+.flex .flex-item p {
   border-radius: 7px 7px 0 0;
 }
-.flex > div > p {
-  line-height: 30px;
+.flex .flex-item .inner img {
+  border-radius: 0 0 7px 7px;
+}
+.inner > ul > li {
+  margin: 20px 0 0 20px;
 }
 
 /* .flex-item {
