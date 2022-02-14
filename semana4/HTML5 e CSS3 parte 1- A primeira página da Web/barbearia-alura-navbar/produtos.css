@@ -114,10 +114,13 @@ nav {
     transform: translateX(100%);
     /* mover a navegação pra fora da tela ao clicar no icone */
     /*transition: transform 0.3s ease-in-out; /* ease-in significa chegada suave*/
+    /*transition: all 0.5s ease-in;/* transição quando desativa */
   }
+  /*movimento do nav-list  */
   .nav-list.active{
     /* right:50%; */
     transition: all 0.5s ease-in;
+    /* transição quando ativa */
   }
 
   /* para alinhar corretamente ao centro */
