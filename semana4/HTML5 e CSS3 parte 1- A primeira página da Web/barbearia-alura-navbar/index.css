@@ -32,17 +32,24 @@ img {
 }
 /* HEADER */
 .logo {
-  width: 10%;
-  /* font-size: 24px; */
-  text-transform: uppercase;
-  letter-spacing: 4px;
+  width: 56px;
+  height: 56px;
+  float: left;
+  background: url("img/hypster-alura.jpg") center center/56px no-repeat;
+  font-size: 0;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #c78c19, -3px -3px 8px #fff;
+  /* text-transform: uppercase; */
+  /*letter-spacing: 4px; /*espaçamento entre caracteres*/
+  
 }
-.logo > img {
+/*2a opção */
+/* .logo > img {
   border-radius: 10px;
   width: 77%;
-}
-.logo > img:hover {
-  box-shadow: 3px 3px 8px #c78c19, -3px -3px 8px #fff;
+} */
+.logo:hover {
+  opacity: 0.6
 }
 header {
   position: fixed;
@@ -82,7 +89,16 @@ nav {
   margin: 8px;
   transition: 0.3s;
 }
-
+/*transição entre logo*/
+@media(max-width:550px){
+  .logo{
+    width: 56px;
+    height:56px;
+    float: left;
+    background: url("img/alura_1.jpg") center center/56px no-repeat;
+    transition: all 0.3s ease-in;
+  }
+}
 @media (max-width: 600px) {
   body {
     overflow: hidden;
@@ -96,14 +112,19 @@ nav {
     top: 18vh; /*alinhando ul para baixo do header*/
     right: 0; /* alinha a direita */
     width: 65vw; /* representa a 65% da tela */
-    height: 92vh;
+    height: 65vh;
     background: linear-gradient(to right, #3f2d59, #6610f2, #3f2d59);
     flex-direction: column; /* alinha em colunas */
     align-items: center;
-    justify-content: space-around; /* espalhando os links embaixo do outro */
+    justify-content: space-evenly; /* espalhando os links embaixo do outro */
     transform: translateX(100%);
     /* mover a navegação pra fora da tela ao clicar no icone */
     /*transition: transform 0.3s ease-in-out; /* ease-in significa chegada suave*/
+  }
+  /*movimento do nav-list  */
+  .nav-list.active{
+    /* right:50%; */
+    transition: all 0.5s ease-in;
   }
 
   /* para alinhar corretamente ao centro */
@@ -284,8 +305,8 @@ section {
   line-height: 23px;
   border-radius: 0 0 7px 7px;
 }
-.inner > ul > li {
-  list-style: "🗸";
+.inner > ul > li::before {
+  content: "🗸";
   color: #002041;
 }
 .inner > ul > li:nth-child(1) {
