@@ -213,7 +213,8 @@ section {
 
 /* TOP-IMAGE */
 .top-image {
-  color: #c78c19;
+  /* color: #c78c19; */
+  color: #fff;
   text-shadow: 0 1.5px #2b2929;
   background: url("img/banner.jpg") no-repeat center;
   height: 80vh;
