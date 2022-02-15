@@ -144,9 +144,14 @@ textarea {
 }
 
 table {
-  margin: 10px 0 0;
+  margin: 20px 0 40px;
 }
 
+thead{
+  background: #555;
+  color: #fff;
+  font-weight: bold;
+}
 th {
   background: #777777;
   color: #ffffff;
@@ -180,4 +185,23 @@ legend {
 }
 .checkbox {
   margin: 20px 0;
+}
+
+.enviar {
+  width: 40%;
+  padding: 15px 0;
+  background: orange;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.enviar:hover {
+  background: darkorange;
+  /* transform: rotate(70deg) scale(1.02); */
+  transform: scale(1.02);
 }
