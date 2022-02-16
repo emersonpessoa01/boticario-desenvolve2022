@@ -41,7 +41,7 @@ img {
   box-shadow: 3px 3px 5px #c78c19, -3px -3px 8px #fff;
 }
 .logo:hover {
-  opacity: 0.6
+  opacity: 0.6;
 }
 header {
   position: fixed;
@@ -83,10 +83,10 @@ nav {
 }
 
 /*transição entre logo*/
-@media(max-width:550px){
-  .logo{
+@media (max-width: 550px) {
+  .logo {
     width: 56px;
-    height:56px;
+    height: 56px;
     float: left;
     background: url("img/alura_1.jpg") center center/56px no-repeat;
     transition: all 0.3s ease-in;
@@ -117,7 +117,7 @@ nav {
     /*transition: all 0.5s ease-in;/* transição quando desativa */
   }
   /*movimento do nav-list  */
-  .nav-list.active{
+  .nav-list.active {
     /* right:50%; */
     transition: all 0.5s ease-in;
     /* transição quando ativa */
@@ -330,4 +330,129 @@ footer img {
   color: #fff;
   font-size: 12px;
   margin: 10px 0 0;
+}
+
+/* Página de contato */
+/* main {
+  width: 940px;
+  margin: 0 auto;
+} */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 150px 0;
+}
+form {
+  margin: 40px 0;
+}
+
+form label,
+legend {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+  
+}
+
+.contato {
+  width: 940px;
+  margin: 40px auto;
+}
+
+.contato label,
+.input-group legend {
+  display: block;
+  margin: 0 0 5px;
+  font-size: 20px;
+}
+
+.campo-padrao,
+textarea {
+  display: block;
+  margin: 0 0 30px;
+  padding: 10px 20px;
+  width: 50%;
+  border: 1px solid #aaa;
+}
+
+.input-group {
+  margin: 0 0 20px;
+}
+
+.newsletter {
+  margin: 0 0 20px;
+}
+
+.botao {
+  margin: 20px 0 0;
+  width: 30%;
+  padding: 10px 20px;
+  font-size: 24px;
+  display: inline-block;
+  background: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.botao:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.funcionamento {
+  width: 940px;
+  margin: 0 auto 40px;
+}
+
+.class-padrao {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+}
+.checkbox {
+  margin: 20px 0;
+}
+
+.enviar {
+  width: 40%;
+  padding: 15px 0;
+  background: orange;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.enviar:hover {
+  background: darkorange;
+  /* transform: rotate(70deg) scale(1.02); */
+  transform: scale(1.02);
+}
+
+table {
+  margin: 20px 0 40px;
+}
+
+thead {
+  background: #555;
+  color: #fff;
+  font-weight: bold;
+}
+th {
+  background: #777777;
+  color: #ffffff;
+}
+
+td,
+th {
+  border: 1px solid #000000;
+  padding: 5px 20px;
 }
