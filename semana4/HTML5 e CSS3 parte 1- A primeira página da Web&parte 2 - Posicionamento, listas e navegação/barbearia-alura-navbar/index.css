@@ -251,16 +251,17 @@ section {
   display: flex;
 }
 /* AJUSTANDO POSIÇÃO A IMAGEM ENTRE O TEXTO */
-.top .top-content{
+.top .top-content {
   display: inline-block;
   flex-wrap: wrap;
   max-width: 800px;
   margin: 0 auto;
   clear: left; /* limpar sombra em volta da imagem */
+  color: #002041;
+
 }
 
 .top .top-content .text-1 {
-  color: #002041;
   font-size: 23px;
   text-align: center;
   margin-bottom: 20px;
@@ -272,11 +273,11 @@ section {
   margin: 0 20px 10px 12px;
   border-radius: 7px;
 }
-.top .top-content .text-2 {
-  color: #002041;
-  font-size: 15px;
+.top .top-content .text-2 p::first-letter {
+  font-size: 40px;
   font-weight: 400;
 }
+
 
 .top .top-content .text-3 {
   color: #002041;
@@ -306,10 +307,7 @@ section {
 }
 /* CSS FLEXBOX 1*/
 .flexbox1 {
-  /* padding: 80px 0 0;
-  margin: 50px 0 0; */
   text-align: center;
-  margin: 40px 0 0;
   font-weight: 600;
   font-size: 25px;
 }
