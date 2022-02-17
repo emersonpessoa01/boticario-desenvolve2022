@@ -1,5 +1,5 @@
 header {
-  background: #bbbbbb;
+  background: #bbb;
   padding: 20px 0;
 }
 
@@ -143,11 +143,40 @@ textarea {
   margin: 0 auto 40px;
 }
 
+.class-padrao {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+}
+.checkbox {
+  margin: 20px 0;
+}
+
+.enviar {
+  width: 40%;
+  padding: 15px 0;
+  background: orange;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.enviar:hover {
+  background: darkorange;
+  /* transform: rotate(70deg) scale(1.02); */
+  transform: scale(1.02);
+}
+
 table {
   margin: 20px 0 40px;
 }
 
-thead{
+thead {
   background: #555;
   color: #fff;
   font-weight: bold;
@@ -177,31 +206,22 @@ legend {
   font-size: 20px;
   margin: 0 0 10px;
 }
-.class-padrao {
-  display: block;
-  margin: 0 0 20px;
-  padding: 10px 25px;
-  width: 50%;
-}
-.checkbox {
-  margin: 20px 0;
-}
 
-.enviar {
-  width: 40%;
-  padding: 15px 0;
-  background: orange;
-  color: #fff;
+/* CSS DA PÁGINA INICIAL */
+.titulo-principal {
+  width: 100%;
+  font-size: 2em; /* em tem o dobro do titulo da fonte -base dependendo da base */
+  margin: 0 0 1em;
+}
+.principal p {
+  margin: 0 0 1em;
+}
+.principal strong {
   font-weight: bold;
-  font-size: 18px;
-  border: none;
-  border-radius: 7px;
-  cursor: pointer;
-  transition: all 0.3s;
 }
-
-.enviar:hover {
-  background: darkorange;
-  /* transform: rotate(70deg) scale(1.02); */
-  transform: scale(1.02);
+.principal em {
+  font-style: italic;
+}
+.imagembeneficios {
+  width: 60%;
 }

@@ -237,7 +237,9 @@ section {
   font-size: 23px;
   text-align: center;
   /* margin-top: 100px; */
+  clear: left; /* limpa a sombra do float */
 }
+
 .top-image .top-content .text-2 {
   font-size: 18px;
   text-align: center;
@@ -248,10 +250,27 @@ section {
   width: 100%;
   display: flex;
 }
+/* AJUSTANDO POSIÇÃO A IMAGEM ENTRE O TEXTO */
+.top .top-content{
+  display: inline-block;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+  clear: left; /* limpar sombra em volta da imagem */
+}
+
 .top .top-content .text-1 {
   color: #002041;
   font-size: 23px;
   text-align: center;
+  margin-bottom: 20px;
+}
+/* imagem ao lado texto */
+.utensilios {
+  width: 100px;
+  float: left;
+  margin: 0 20px 10px 12px;
+  border-radius: 7px;
 }
 .top .top-content .text-2 {
   color: #002041;
