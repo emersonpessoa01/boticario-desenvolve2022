@@ -258,7 +258,6 @@ section {
   margin: 0 auto;
   clear: left; /* limpar sombra em volta da imagem */
   color: #002041;
-
 }
 
 .top .top-content .text-1 {
@@ -277,7 +276,6 @@ section {
   font-size: 40px;
   font-weight: 400;
 }
-
 
 .top .top-content .text-3 {
   color: #002041;
@@ -311,20 +309,37 @@ section {
   font-weight: 600;
   font-size: 25px;
 }
+
+/* texto estabelecimento */
+.flex-title-principal {
+  display: flex;
+  flex-direction: column;
+  max-width: 780px;
+  margin: 0 auto;
+}
+.flex-title-principal h3,
+p {
+  text-align: center;
+  padding: 10px 0;
+}
 .flex {
   display: flex;
   flex-wrap: wrap;
   max-width: 800px; /*largura padrão para dimensionar e remove a expansão da última div */
   margin: 0 auto;
-  margin-bottom: 50px;
+  /* margin-bottom: 40px; */
 }
+
 .flex > div {
   flex: 1 1 350px;
   /* flex: 1 1 150px; */
-  margin: 12px;
+  margin: 15px;
   width: 350px;
   height: 100%;
   box-shadow: 3px 3px 8px #c78c19, -3px -3px 8px #fff;
+  border-radius: 7px;
+}
+.flex .flex-item > iframe {
   border-radius: 7px;
 }
 .flex > div:hover {
