@@ -264,7 +264,7 @@ section {
   flex: 1 1 200px;
   /* flex: 1 1 150px; */
   margin: 12px;
-  width: 200px;
+  /* width: 200px; */
   height: 100%;
 }
 .flex > div:hover {

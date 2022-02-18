@@ -161,6 +161,7 @@ nav {
     font-size: 10px;
   }
 }
+
 /* animar as opacidades dos links */
 @keyframes navLinkFade {
   from {
@@ -269,7 +270,7 @@ section {
 .utensilios {
   width: 100px;
   float: left;
-  margin: 0 20px 10px 12px;
+  margin: 0 20px 20px 12px;
   border-radius: 7px;
 }
 .top .top-content .text-2 p::first-letter {
@@ -316,9 +317,14 @@ section {
   flex-direction: column;
   max-width: 780px;
   margin: 0 auto;
+  color: #002041;
 }
-.flex-title-principal h3,
-p {
+.flex-title-principal h3{
+  text-align: center;
+  padding: 10px 0;
+  font-size: 23px;
+}
+.flex-title-principal p {
   text-align: center;
   padding: 10px 0;
 }
