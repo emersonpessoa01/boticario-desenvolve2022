@@ -345,15 +345,20 @@ main {
   padding: 150px 0;
 }
 form {
-  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
 }
 
 form label,
 legend {
+  margin-bottom: 5px;
+  margin-top: 5px;
   display: block;
   font-size: 20px;
   margin: 0 0 10px;
-  
+  color: #555;
+  font-weight: 600;
 }
 
 /* fieldset */
@@ -376,6 +381,7 @@ textarea {
   padding: 10px 20px;
   width: 50%;
   border: 1px solid #aaa;
+  border-radius: 7px;
 }
 
 .input-group {
@@ -440,7 +446,7 @@ textarea {
 }
 
 table {
-  margin: 20px 0 40px;
+  margin: 40px;
 }
 
 thead {
