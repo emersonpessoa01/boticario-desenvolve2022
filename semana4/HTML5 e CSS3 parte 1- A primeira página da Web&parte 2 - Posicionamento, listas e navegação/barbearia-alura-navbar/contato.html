@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-  <<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="produtos.css" />
+    <link rel="stylesheet" href="contato.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -34,123 +34,110 @@
           <li><a href="/">Início</a></li>
           <li><a href="#">Produtos</a></li>
           <li><a href="contato.html">Contato</a></li>
-
         </ul>
       </nav>
     </header>
-
     <main>
       <form>
-        <label for="nomesobrenome">Nome e sobrenome</label>
-        <input
+        <label id="campo-padrao" for="nomesobrenome">
+          Nome e sobrenome
+          <input
           autofocus
-          type="text"
+          class="campo-padrao" 
+          type="text" 
           id="nomesobrenome"
-          class="campo-padrao"
           required
-        />
-
-        <label for="email">Email</label>
-        <input
-          type="email"
+          >
+        </label>
+        <label id="campo-padrao" for="email">
+          Email
+          <input
+          class="campo-padrao" 
+          type="email" 
           id="email"
-          class="campo-padrao"
           required
           placeholder="seuemail@dominio.com"
-        />
-
-        <label for="telefone">Telefone</label>
-        <input
-          type="tel"
+          >
+        </label>
+        <label id="campo-padrao" for="telefone">
+          Celular
+          <input
+          autofocus
+          class="campo-padrao" 
+          type="text" 
           id="telefone"
-          class="campo-padrao"
           required
-          placeholder="(xx) xxxxx-xxxx)"
-        />
-
-        <label for="mensagem">Mensagem</label>
-        <textarea
-          cols="70"
-          rows="10"
-          id="mensagem"
-          class="campo-padrao"
-          required
-        ></textarea>
-
+          placeholder="(xx) xxxxx-xxxx"
+          >
+        </label>
+        <label id="campo-padrao" for="mensagem">
+          Mensagem
+          <textarea id="mensagem" cols="70" rows="10"></textarea>
+        </label>
         <fieldset class="contato">
           <legend>Como prefere o nosso contato?</legend>
-          <label for="radio-email"
-            ><input
-              type="radio"
-              name="contato"
-              value="email"
-              id="radio-email"
-            />
-            Email</label
-          >
-
-          <label for="radio-telefone"
-            ><input
-              type="radio"
-              name="contato"
-              value="telefone"
-              id="radio-telefone"
-            />
-            Telefone</label
-          >
-
-          <label for="radio-whatsapp"
-            ><input
-              type="radio"
-              name="contato"
-              value="whatsapp"
-              id="radio-whatsapp"
-              checked
-            />
-            WhatsApp</label
-          >
+          <label for="radio-email">
+          <input 
+          type="radio"
+          name="contato"
+          value="email"
+          id="email"
+          >Email
+          </label>
+          <label for="radio-telefone">
+          <input 
+          type="radio"
+          name="contato"
+          value="telefone"
+          id="radio-telefone"
+          >Telefone
+        </label>
+        <label for="radio-whatsapp">
+          <input 
+          type="radio"
+          name="contato"
+          value="whatsapp"
+          checked
+          >WhatsApp
+        </label>
         </fieldset>
-
-        <fieldset class="funcionamento">
-          <legend>Qual horário prefere ser atendido?</legend>
+        
+        <legend>Qual horário prefere ser atendido?</legend>
           <select>
             <option>Manhã</option>
             <option>Tarde</option>
             <option>Noite</option>
           </select>
         </fieldset>
-
         <label class="checkbox"
           ><input type="checkbox" checked />Gostaria de receber nossas novidades
           por email?</label
         >
-
-        <input class="enviar" type="submit" value="Enviar formulário" />
+        <button class="enviar" type="submit">Enviar formulário</button>
+        <table>
+          <thead>
+            <tr>
+              <th>Dia</th>
+              <th>Horário</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Segunda</td>
+              <td>8h ~ 20h</td>
+            </tr>
+            <tr>
+              <td>Quarta</td>
+              <td>8h ~ 20h</td>
+            </tr>
+            <tr>
+              <td>Sexta</td>
+              <td>8h ~ 20h</td>
+            </tr>
+          </tbody>
+        </table>
       </form>
-      <table>
-        <thead>
-          <tr>
-            <th>Dia</th>
-            <th>Horário</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Segunda</td>
-            <td>8h ~ 20h</td>
-          </tr>
-          <tr>
-            <td>Quarta</td>
-            <td>8h ~ 20h</td>
-          </tr>
-          <tr>
-            <td>Sexta</td>
-            <td>8h ~ 20h</td>
-          </tr>
-        </tbody>
-      </table>
     </main>
-
     <footer>
       <img src="img/logo-branco.png" alt="logo-branco-alura">
       <p class="copyright">
