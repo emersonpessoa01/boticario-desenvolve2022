@@ -308,14 +308,15 @@ textarea {
 }
 
 .enviar:hover {
-  background: darkorange;
+  background: transparent;
   /* transform: rotate(70deg) scale(1.02); */
-  transform: scale(1.02);
+  /* transform: scale(1.02); */
+  color: #3f2d59;
+  border: 2px solid #3f2d59
 }
 
 table {
   margin: 40px;
-  background: darkorange;
   margin: 0 auto;
   margin-top: 20px;
   width: 100%;
