@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="contato.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link.
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Lexend:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Produtos - Barbearia Alura</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="/"><h1>Logo</h1></a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="/">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form>
+        <label id="campo-padrao" for="nomesobrenome">
+          Nome e sobrenome
+          <input
+          autofocus
+          class="campo-padrao" 
+          type="text" 
+          id="nomesobrenome"
+          required
+          >
+        </label>
+        <label id="campo-padrao" for="email">
+          Email
+          <input
+          class="campo-padrao" 
+          type="email" 
+          id="email"
+          required
+          placeholder="Seu email"
+          >
+        </label>
+        <label id="campo-padrao" for="telefone">
+          Celular
+          <input
+          autofocus
+          class="campo-padrao" 
+          type="text" 
+          id="telefone"
+          required
+          placeholder="(xx) xxxxx-xxxx"
+          >
+        </label>
+        <label id="campo-padrao" for="mensagem">
+          Mensagem
+          <textarea id="mensagem" cols="70" rows="10"></textarea>
+        </label>
+        <fieldset class="contato">
+          <legend>Como prefere o nosso contato?</legend>
+          <label for="radio-email">
+          <input 
+          type="radio"
+          name="contato"
+          value="email"
+          id="email"
+          >Email
+          </label>
+          <label for="radio-telefone">
+          <input 
+          type="radio"
+          name="contato"
+          value="telefone"
+          id="radio-telefone"
+          >Telefone
+        </label>
+        <label for="radio-whatsapp">
+          <input 
+          type="radio"
+          name="contato"
+          value="whatsapp"
+          checked
+          >WhatsApp
+        </label>
+        </fieldset>
+        
+        <legend>Qual horário prefere ser atendido?</legend>
+          <select>
+            <option>Manhã</option>
+            <option>Tarde</option>
+            <option>Noite</option>
+          </select>
+        </fieldset>
+        <label class="checkbox"
+          ><input type="checkbox" checked />Gostaria de receber nossas novidades
+          por email?</label
+        >
+        <button class="enviar" type="submit">Enviar formulário</button>
+        <table>
+          <thead>
+            <tr>
+              <th>Dia</th>
+              <th>Horário</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Segunda</td>
+              <td>8h ~ 20h</td>
+            </tr>
+            <tr>
+              <td>Quarta</td>
+              <td>8h ~ 20h</td>
+            </tr>
+            <tr>
+              <td>Sexta</td>
+              <td>8h ~ 20h</td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </main>
+    <footer>
+      <img src="img/logo-branco.png" alt="logo-branco-alura">
+      <p class="copyright">
+        Todos os direitos reservados. Emerson Pessoa&#9749&copy;<script>document.write(new Date().getFullYear())</script>
+      </p>
+    </footer>
+    <script src="mobile-navbar.js"></script>
+  </body>
+</html>
