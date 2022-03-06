@@ -91,10 +91,9 @@ nav {
 /*transição entre logo*/
 @media (max-width: 550px) {
   .logo {
-    width: 56px;
-    height: 56px;
+    border-radius:50%;
     float: left;
-    background: url("img/alura_1.jpg") center center/56px no-repeat;
+    background: url("img/alura04.png") center center/56px no-repeat;
     transition: all 0.3s ease-in;
   }
 }
