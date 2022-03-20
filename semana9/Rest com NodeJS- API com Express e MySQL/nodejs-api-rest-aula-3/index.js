@@ -12,6 +12,6 @@ conexao.connect((erro) => {
 
     const app = customExpress();
 
-    app.listen(3000, () => console.log("Servidor rodando na porta 3000"));
+    app.listen(3000, () => console.log("Servidor rodando na porta localhost:3000"));
   }
 });
