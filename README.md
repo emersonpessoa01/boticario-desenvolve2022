@@ -14,7 +14,7 @@
 
 <p align="center"> 
      <a href="https://github.com/emersonpessoa01"><img src="https://img.shields.io/static/v1?label=build&message=home&color=0000fff&style=flat&logo=github"/></a>
-<a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack"><img src="https://img.shields.io/date/1643194350" /></a>
+<a href="https://github.com/emersonpessoa01/boticario-desenvolve2022"><img src="https://img.shields.io/date/1643194350" /></a>
 <a href="https://github.com/emersonpessoa01/boticario-desenvolve2022"><img src="https://img.shields.io/static/v1?label=page&message=desenvolve2022&color=4c15dc&stype=for-the-badge&logo=JAVASCRIPT"></a>
   </p>
 
