@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/emersonpessoa01/boticario-desenvolve2022/tree/master/semana9/Rest%20com%20NodeJS-%20API%20com%20Express%20e%20MySQL/nodejs-api-rest-aula-3"
+    "url": "https://github.com/emersonpessoa01/boticario-desenvolve2022/tree/master/semana9/Rest%20com%20NodeJS-%20API%20com%20Express%20e%20MySQL/nodejs-api-rest-aula-4"
   },
   "author": "emerson pessoa",
   "license": "ISC",
@@ -22,6 +22,8 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "moment": "^2.29.1",
+    "mysql2": "^2.3.3",
     "nodemon": "^1.19.2"
   }
 }
