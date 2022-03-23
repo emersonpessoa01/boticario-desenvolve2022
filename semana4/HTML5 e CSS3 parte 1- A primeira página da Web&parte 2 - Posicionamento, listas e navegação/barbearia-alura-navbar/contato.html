@@ -38,35 +38,35 @@
       </nav>
     </header>
     <main>
-      <form>
+    <form name="form.user" method="POST">
         <label id="campo-padrao" for="nomesobrenome">
-          Nome e sobrenome
+          Nome
           <input
           autofocus
+          name="name"
           class="campo-padrao" 
           type="text" 
           id="nomesobrenome"
-          required
           >
         </label>
         <label id="campo-padrao" for="email">
           Email
           <input
+          name="email"
           class="campo-padrao" 
           type="email" 
           id="email"
-          required
           placeholder="Seu email"
           >
         </label>
         <label id="campo-padrao" for="telefone">
           Celular
           <input
+          name="celular"
           autofocus
           class="campo-padrao" 
           type="text" 
           id="telefone"
-          required
           placeholder="(xx) xxxxx-xxxx"
           >
         </label>
@@ -145,5 +145,6 @@
       </p>
     </footer>
     <script src="mobile-navbar.js"></script>
+    <script src="contato.js"></script>
   </body>
 </html>
