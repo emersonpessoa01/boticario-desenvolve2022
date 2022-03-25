@@ -142,21 +142,21 @@ nav {
     position: absolute;
     top: 18vh; /*alinhando ul para baixo do header*/
     right: 0; /* alinha a direita */
-    width: 65vw; /* representa a 65% da tela */
+    width: 100vw; /* representa a 65% da tela */
     height: 65vh;
-    background: linear-gradient(to right, #3f2d59, #6610f2, #3f2d59);
+    background: rgba(8, 44, 165, 0.788);
     flex-direction: column; /* alinha em colunas */
     align-items: center;
     justify-content: space-evenly; /* espalhando os links embaixo do outro */
     transform: translateX(100%);
     /* mover a navegação pra fora da tela ao clicar no icone */
-    /*transition: transform 0.3s ease-in-out; /* ease-in significa chegada suave*/
-    /*transition: all 0.5s ease-in;/* transição quando desativa */
+    transition: transform 0.3s ease-in-out; /* ease-in significa chegada suave*/
+    transition: all 0.5s ease-in;/* transição quando desativa */
   }
   /*movimento do nav-list  */
   .nav-list.active {
     /* right:50%; */
-    transition: all 0.5s ease-in;
+    /* transition: all 0.5s ease-in; */
     /* transição quando ativa */
   }
 
@@ -171,12 +171,11 @@ nav {
     padding: 10px;
     border-radius: 6px;
   }
-  .nav-list li a:hover {
-    /* color: #b02ab7; */
+  /* .nav-list li a:hover {
     color: #c78c19;
     transform: scale(1.03);
     border: 2px solid #c78c19;
-  }
+  } */
   /* para mostrar o icone menu */
   .mobile-menu {
     display: block;
