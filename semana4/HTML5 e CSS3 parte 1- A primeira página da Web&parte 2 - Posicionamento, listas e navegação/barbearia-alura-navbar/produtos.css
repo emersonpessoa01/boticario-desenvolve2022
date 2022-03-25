@@ -18,9 +18,9 @@ a {
   color: #fff;
   transition: 0.3s;
 }
-a:hover {
+/* a:hover {
   opacity: 0.7;
-}
+} */
 
 h1 {
   text-align: center;
@@ -47,9 +47,7 @@ img {
   border-radius: 10px;
   width: 77%;
 } */
-.logo:hover {
-  opacity: 0.6;
-}
+
 header {
   position: fixed;
   top: 0;
@@ -76,6 +74,40 @@ nav {
 .nav-list li {
   letter-spacing: 3px;
   margin-left: 32px;
+}
+/* TRANSIÇÃO DO HOVER */
+.nav-list a{
+  transform: 2ms ease-in;
+  position: relative;
+  padding: 6px 12px;
+}
+.nav-list a:before{
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left:50%;
+  width: 0px;
+  height: 1px;
+  background-color: rgb(251,251,0);
+  transition: all .7s ease;
+}
+.nav-list a:after{
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  right:50%;
+  width: 0px;
+  height: 1px;
+  background-color: rgb(251,251,0);
+  transition: all 1s ease;
+}
+.nav-list a:hover:before{
+  width:50%;
+  
+}
+.nav-list a:hover:after{
+  width:50%;
+  
 }
 .mobile-menu {
   /* escondendo mobile-menu */
