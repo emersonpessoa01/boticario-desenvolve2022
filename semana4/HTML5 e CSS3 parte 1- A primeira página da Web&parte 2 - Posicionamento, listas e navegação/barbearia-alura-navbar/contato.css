@@ -347,12 +347,13 @@ textarea {
   background-color: transparent;
   border-radius: 6px;
   color: #0067b8;
-  width: 50%;
+  width: 30%;
   height: 50px;
   border: 1px solid #0067b8;
+  
 }
 .button:hover {
-  box-shadow: inset 260px 0 0 #0067b8;
+  box-shadow: inset 450px 0 0 #0067b8;
   color: #fff;
 }
 
@@ -407,18 +408,15 @@ th {
     display: flex;
     flex-wrap: wrap;
   }
-}
-@media (max-width: 480px) {
-  .btns {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  .button.blue{
+    width: 100%;
   }
   .button {
-    font-size: 200%;
     font-weight: 700;
   }
+}
+@media (max-width: 480px) {
+  
 }
 footer {
   text-align: center;
