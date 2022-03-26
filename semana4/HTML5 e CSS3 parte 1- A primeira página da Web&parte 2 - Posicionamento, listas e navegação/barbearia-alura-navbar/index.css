@@ -64,8 +64,8 @@ nav {
   font-family: "Lexend", "Lato", san-serif;
   /* background: #23232e; */
   background: linear-gradient(to right, #3f2d59, #6610f2, #3f2d59);
-  height: 18vh;
-  box-shadow: 2px 2px 5px #2b2929;
+  height: 12vh;
+  box-shadow: 2px 2px 5px #d9d9d9, -2px -2px 5px #ffff;
 }
 
 /* ul */
@@ -86,20 +86,20 @@ nav {
 .nav-list a:before{
   content: "";
   position: absolute;
-  bottom: -10px;
+  bottom: -5px;
   left:50%;
   width: 0px;
-  height: 1px;
+  height: 1.5px;
   background-color: rgb(251,251,0);
   transition: all .7s ease;
 }
 .nav-list a:after{
   content: "";
   position: absolute;
-  bottom: -10px;
+  bottom: -5px;
   right:50%;
   width: 0px;
-  height: 1px;
+  height: 1.5px;
   background-color: rgb(251,251,0);
   transition: all 1s ease;
 }
@@ -127,8 +127,8 @@ nav {
 /*transição entre logo*/
 @media (max-width: 550px) {
   .logo {
-    /* width: 56px;
-    height: 56px; */
+    width: 50px;
+    height: 50px;
     border-radius:50%;
     float: left;
     background: url("img/alura04.png") center center/56px no-repeat;
@@ -141,11 +141,14 @@ nav {
     /* se algo transborda, fica escondido do body. Detalhe: quando esconde o body acaba escondendo o barra de rolagem também. */
     overflow: scroll; /* mostra a barra de rolagem */
   }
+  nav{
+    height: 10vh;
+  }
 
   /* para posicinar a navegação aonde quiser */
   .nav-list {
     position: absolute;
-    top: 18vh; /*alinhando ul para baixo do header*/
+    top: 10vh; /*alinhando ul para baixo do header*/
     right: 0; /* alinha a direita */
     width: 100vw; /* representa a 65% da tela */
     height: 65vh;
