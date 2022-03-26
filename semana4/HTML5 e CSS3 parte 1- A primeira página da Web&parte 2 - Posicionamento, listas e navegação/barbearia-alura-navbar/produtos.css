@@ -242,10 +242,14 @@ section {
 .top {
   color: #c78c19;
   display: flex;
-  background: url("img/beneficios.jpg") no-repeat center;
+  background: url("img/beneficios.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-position-y: 100px;
+  background-repeat: no-repeat;
   height: 80vh;
   background-attachment: fixed;
-  /* padding: 80px 0; */
+  padding: 80px 0;
 }
 .top .max-width {
   width: 100%;
@@ -264,22 +268,36 @@ section {
   font-size: 23px;
 }
 
-.top .top-content a {
-  display: inline-block;
-  background-color: #b02ab7;
-  color: #fff;
-  font-size: 18px;
-  padding: 12px 18px;
-  margin-top: 10px;
-  margin-left: 10px;
-  text-align: center;
-  border: 2px solid #b02ab7;
-  border-radius: 6px;
-  transition: all 0.3s ease-in;
+.btns {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 6px 12px;
 }
-.top .top-content a:hover {
+.button{
+  border-style: none;
+  height: 40px;
+  padding: 10px 12px;
+  /* background-color: black; */
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: box-shadow 1s ease; /*configuração inicial de transição*/
+  /* font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  text-transform: uppercase;
+}
+.button.purple {
+  background-color: transparent;
+  border-radius: 6px;
   color: #b02ab7;
-  background: none;
+  width: 30%;
+  height: 50px;
+  border: 1px solid #b02ab7;
+  
+}
+.button:hover {
+  box-shadow: inset 450px 0 0 #b02ab7;
+  color: #fff;
 }
 /* CSS FLEXBOX 1*/
 .flexbox1 {
