@@ -296,7 +296,7 @@ section {
   
 }
 .button:hover {
-  box-shadow: inset 450px 0 0 #b02ab7;
+  box-shadow: inset 200px 0 0 #b02ab7;
   color: #fff;
 }
 /* CSS FLEXBOX 1*/
