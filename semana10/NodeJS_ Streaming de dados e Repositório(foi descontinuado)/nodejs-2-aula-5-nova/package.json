@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/emersonpessoa01/boticario-desenvolve2022/tree/master/semana10/NodeJS_%20Streaming%20de%20dados%20e%20Reposit%C3%B3rio(foi%20descontinuado)/nodejs-2-aula-4"
+    "url": "https://github.com/emersonpessoa01/boticario-desenvolve2022/tree/master/semana10/NodeJS_%20Streaming%20de%20dados%20e%20Reposit%C3%B3rio(foi%20descontinuado)/nodejs-2-aula-5-nova"
   },
   "author": "emerson pessoa",
   "license": "ISC",
@@ -22,7 +22,8 @@
     "consign": "^0.1.6",
     "express": "^4.17.1",
     "moment": "^2.24.0",
-    "mysql": "^2.17.1"
+    "mysql": "^2.17.1",
+    "mysql2": "^2.3.3"
   },
   "devDependencies": {
     "nodemon": "^1.19.2"
