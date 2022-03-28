@@ -124,6 +124,8 @@ nav {
 /*transição entre logo*/
 @media (max-width: 550px) {
   .logo {
+    width: 50px;
+    height: 50px;
     border-radius:50%;
     float: left;
     background: url("img/alura04.png") center center/56px no-repeat;
@@ -258,6 +260,7 @@ section {
 .top .max-width {
   width: 100%;
   display: flex;
+  padding: 120px 0;
 }
 .top .top-content .text-1 {
   font-size: 18px;
