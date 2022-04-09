@@ -1,46 +1,43 @@
-import BotaoConclui from './concluiTarefa.js'
-import BotaoDeleta from './deletaTarefa.js'
- 
+import BotaoConclui from "./concluiTarefa.js";
+import BotaoDeleta from "./deletaTarefa.js";
 
 export const handleNovoItem = (evento) => {
-    evento.preventDefault()
-    const tarefas = JSON.parse(localStorage.getItem('tarefas')) ||[]
-    const lista = document.querySelector('[data-list]')
-    const input = document.querySelector('[data-form-input]')
-    const valor = input.value
+  evento.preventDefault();
+  const tarefas = JSON.parse(localStorage.getItem("tarefas")) || [];
+  const lista = document.querySelector("[data-list]");
+  const input = document.querySelector("[data-form-input]");
+  const valor = input.value;
 
-    const calendario = document.querySelector('[data-form-date]')
-    const data = moment(calendario.value)
+  const calendario = document.querySelector("[data-form-date]");
+  const data = moment(calendario.value);
 
-    const dataFormatada = data.format('DD/MM/YYYY')
+  const dataFormatada = data.format("DD/MM/YYYY");
 
-    const dados = { 
-        valor,
-        dataFormatada
-    }
+  const dados = {
+    valor,
+    dataFormatada,
+  };
 
-    const tarefasAtualizadas = [...tarefas, dados]
+  const tarefasAtualizadas = [...tarefas, dados];
 
-    const criaTarefa = Tarefa(dados)
+  const criaTarefa = Tarefa(dados);
 
-    lista.appendChild(criaTarefa)
+  lista.appendChild(criaTarefa);
 
-    localStorage.setItem('tarefas', JSON.stringify(tarefasAtualizadas))
+  localStorage.setItem("tarefas", JSON.stringify(tarefasAtualizadas));
 
-    input.value = " "
-}
+  input.value = " ";
+};
 
 export const Tarefa = ({ valor, dataFormatada }) => {
+  const tarefa = document.createElement("li");
+  tarefa.classList.add("task");
+  const conteudo = `<p class="content">${dataFormatada} * ${valor}</p>`;
 
-    const tarefa = document.createElement('li')
-    tarefa.classList.add('task')
-    const conteudo = `<p class="content">${dataFormatada} * ${valor}</p>`
+  tarefa.innerHTML = conteudo;
 
-    tarefa.innerHTML = conteudo
+  tarefa.appendChild(BotaoConclui());
+  tarefa.appendChild(BotaoDeleta());
 
-    tarefa.appendChild(BotaoConclui())
-    tarefa.appendChild(BotaoDeleta())
-   
-    return tarefa
-
-}
+  return tarefa;
+};

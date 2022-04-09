@@ -1,22 +1,20 @@
-const BotaoConclui = () => { 
-    const botaoConclui = document.createElement('button')  
-    
-    botaoConclui.classList.add('check-button')
-    botaoConclui.innerText = 'concluir'
+const BotaoConclui = () => {
+  const botaoConclui = document.createElement("button");
 
-    botaoConclui.addEventListener('click', concluirTarefa)
+  botaoConclui.classList.add("check-button");
+  botaoConclui.innerText = "concluir";
 
-    return botaoConclui
+  botaoConclui.addEventListener("click", concluirTarefa);
 
-}
+  return botaoConclui;
+};
 
 const concluirTarefa = (evento) => {
-    const botaoConclui = evento.target
+  const botaoConclui = evento.target;
 
-    const tarefaCompleta = botaoConclui.parentElement
+  const tarefaCompleta = botaoConclui.parentElement;
 
-    tarefaCompleta.classList.toggle('done')
-}
+  tarefaCompleta.classList.toggle("done");
+};
 
-export default BotaoConclui
-
+export default BotaoConclui;
