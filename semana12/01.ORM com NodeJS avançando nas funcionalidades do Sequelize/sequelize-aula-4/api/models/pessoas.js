@@ -27,10 +27,14 @@ module.exports = (sequelize, DataTypes) => {
     {
       paranoid: true,
       defaultScope: {
-        where: { ativo: true },
+        where: {
+          ativo: true,
+        },
       },
       scopes: {
-        todos: { where: {} },
+        todos: {
+          where: {},
+        },
         //etc: { constraint: valor }
       },
     }
@@ -41,7 +45,9 @@ module.exports = (sequelize, DataTypes) => {
     });
     Pessoas.hasMany(models.Matriculas, {
       foreignKey: "estudante_id",
-      scope: { status: "confirmado" },
+      scope: {
+        status: "confirmado",
+      },
       as: "aulasMatriculadas",
     });
   };

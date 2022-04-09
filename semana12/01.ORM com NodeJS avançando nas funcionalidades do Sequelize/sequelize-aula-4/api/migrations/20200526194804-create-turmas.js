@@ -11,7 +11,10 @@ module.exports = {
       docente_id: {
         allowNull: false,
         type: Sequelize.INTEGER,
-        references: { model: "Pessoas", key: "id" },
+        references: {
+          model: "Pessoas",
+          key: "id",
+        },
       },
       data_inicio: {
         type: Sequelize.DATEONLY,
@@ -19,7 +22,10 @@ module.exports = {
       nivel_id: {
         allowNull: false,
         type: Sequelize.INTEGER,
-        references: { model: "Niveis", key: "id" },
+        references: {
+          model: "Niveis",
+          key: "id",
+        },
       },
       createdAt: {
         allowNull: false,
