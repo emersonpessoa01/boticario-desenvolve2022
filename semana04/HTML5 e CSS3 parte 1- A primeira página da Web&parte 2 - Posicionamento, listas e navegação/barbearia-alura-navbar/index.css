@@ -226,6 +226,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 @media (max-width: 200px) {
