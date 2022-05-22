@@ -78,38 +78,36 @@ nav {
   margin-left: 32px;
 }
 /* TRANSIÇÃO DO HOVER */
-.nav-list a{
+.nav-list a {
   transform: 2ms ease-in;
   position: relative;
   padding: 6px 12px;
 }
-.nav-list a:before{
+.nav-list a:before {
   content: "";
   position: absolute;
   bottom: -5px;
-  left:50%;
+  left: 50%;
   width: 0px;
   height: 1.5px;
-  background-color: rgb(251,251,0);
-  transition: all .7s ease;
+  background-color: rgb(251, 251, 0);
+  transition: all 0.7s ease;
 }
-.nav-list a:after{
+.nav-list a:after {
   content: "";
   position: absolute;
   bottom: -5px;
-  right:50%;
+  right: 50%;
   width: 0px;
   height: 1.5px;
-  background-color: rgb(251,251,0);
+  background-color: rgb(251, 251, 0);
   transition: all 1s ease;
 }
-.nav-list a:hover:before{
-  width:50%;
-  
+.nav-list a:hover:before {
+  width: 50%;
 }
-.nav-list a:hover:after{
-  width:50%;
-  
+.nav-list a:hover:after {
+  width: 50%;
 }
 
 .mobile-menu {
@@ -129,7 +127,7 @@ nav {
   .logo {
     width: 50px;
     height: 50px;
-    border-radius:50%;
+    border-radius: 50%;
     float: left;
     background: url("img/alura04.png") center center/56px no-repeat;
     transition: all 0.3s ease-in;
@@ -141,7 +139,7 @@ nav {
     /* se algo transborda, fica escondido do body. Detalhe: quando esconde o body acaba escondendo o barra de rolagem também. */
     overflow: scroll; /* mostra a barra de rolagem */
   }
-  nav{
+  nav {
     height: 10vh;
   }
 
@@ -159,7 +157,7 @@ nav {
     transform: translateX(100%);
     /* mover a navegação pra fora da tela ao clicar no icone */
     transition: 0.3s ease-in-out; /* ease-in significa chegada suave*/
-    transition: all 0.5s ease-in;/* transição quando desativa */
+    transition: all 0.5s ease-in; /* transição quando desativa */
   }
   /*movimento do nav-list  */
   .nav-list.active {
@@ -179,12 +177,6 @@ nav {
     padding: 10px;
     border-radius: 6px;
   }
-  /* .nav-list li a:hover {
-    color: #c78c19;
-    transform: scale(1.03);
-    border: 2px solid #c78c19;
-  }
-  */
 
   /* para mostrar o icone menu */
   .mobile-menu {
@@ -230,15 +222,10 @@ nav {
 
 /* BANNER */
 section {
-  padding: 50px 0;
+  padding: 2rem 7%;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.top-margin {
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
 }
 
 @media (max-width: 200px) {
@@ -286,14 +273,9 @@ section {
   text-align: center;
 }
 
-/* TOP-CONTENT */
-.top .max-width {
-  width: 100%;
-  display: flex;
-}
 /* AJUSTANDO POSIÇÃO A IMAGEM ENTRE O TEXTO */
 .top .top-content {
-  display: inline-block;
+  display: inline;
   flex-wrap: wrap;
   max-width: 800px;
   margin: 0 auto;
@@ -310,7 +292,7 @@ section {
 .utensilios {
   width: 100px;
   float: left;
-  margin: 0 20px 20px 12px;
+  margin: 0 20px 12px 12px;
   border-radius: 7px;
 }
 .top .top-content .text-2 p::first-letter {
@@ -353,13 +335,11 @@ section {
 
 /* texto estabelecimento */
 .flex-title-principal {
-  display: flex;
-  flex-direction: column;
-  max-width: 780px;
+  padding: 0.3125rem 3%;
   margin: 0 auto;
   color: #002041;
 }
-.flex-title-principal h3{
+.flex-title-principal h3 {
   text-align: center;
   padding: 10px 0;
   font-size: 23px;
@@ -385,7 +365,7 @@ section {
   box-shadow: 3px 3px 8px #c78c19, -3px -3px 8px #fff;
   border-radius: 7px;
 }
-.flex .flex-item > iframe {
+.flex iframe {
   border-radius: 7px;
 }
 .flex > div:hover {
